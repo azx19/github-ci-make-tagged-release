@@ -20,7 +20,7 @@ jobs:
           draft: false
           prerelease: false
   build-ubuntu:
-    name: Upload Release Asset
+    name: Build Ubuntu
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
