@@ -22,6 +22,8 @@ jobs:
   build-ubuntu:
     name: Build Ubuntu
     runs-on: ubuntu-latest
+    needs: create-release
+    if: always() && !failure() && !cancelled()
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
