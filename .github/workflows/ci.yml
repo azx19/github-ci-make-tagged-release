@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Build project # This would actually build your project, using zip for an example artifact
+      - name: Build project # This would actually build your project, using zip for an example artifact build
         run: |
           zip --junk-paths my-artifact README.md
       - name: Upload Release Asset
